@@ -1,0 +1,66 @@
+/* Ensure the body takes up the full height and width of the screen */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Main container for side-by-side layout */
+.main-container {
+    display: flex;
+    flex-direction: row; /* Align items in a row */
+    gap: 20px; /* Space between sections */
+    padding: 20px;
+    background-color: rgba(240, 240, 240, 1);
+    box-sizing: border-box;
+}
+
+/* Style for each section */
+.content-container, .animation-container, .logo-container {
+    flex: 1; /* Allow sections to take equal space */
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Style images, iframes, and audio for responsiveness */
+img, iframe {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+audio {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Animation Section Styling */
+#animate-btn {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#animate-btn:hover {
+    background-color: #2980b9;
+}
+
+/* Define the fade-in animation */
+.animated-box {
+    opacity: 0; /* Initially hidden */
+    transition: opacity 2s ease-in-out; /* Smooth fade-in effect */
+}
+
+.animate {
+    opacity: 1 !important; /* Fully visible when animated */
+}
+

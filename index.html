@@ -1,54 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="styles.css">
-    <title>Photo and Animation</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Photo and Animation</title>
 </head>
 <body>
-
+  <div class="main-container">
+    <!-- Content Section -->
     <div class="content-container">
-        <h2>Photo Of Cleveland, Ohio. Home of the Cleveland Guardians</h2>
-        <div>
-            <img src="cleveland.webp" alt="picture of Cleveland">
-        </div>
+      <h2>Photo Of Cleveland, Ohio. Home of the Cleveland Guardians</h2>
+      <div>
+        <img src="cleveland.webp" alt="Picture of Cleveland" />
+      </div>
 
-        <h2>Soundbyte of bird getting hit by ball</h2>
-        <div>
-            <audio src="Bird.mp3" controls></audio>
-        </div>
+      <h2>Soundbyte of bird getting hit by ball</h2>
+      <div>
+        <audio src="Bird.mp3" controls></audio>
+      </div>
 
-        <h2>Steven Kwan diving catch</h2>
-        <div>
-            <iframe src="KwanCatch.mp4" frameborder="1"></iframe>
-        </div>
+      <h2>Steven Kwan diving catch</h2>
+      <div>
+        <iframe src="KwanCatch.mp4" frameborder="1"></iframe>
+      </div>
 
-        <h2>Guardians Highlights</h2>
-        <div>
-            <iframe 
-                src="https://www.youtube.com/embed/pbsxW5D02Fc" 
-                frameborder="1" 
-                allowfullscreen>
-            </iframe>
-        </div>
-    </div>
+      <h2>Guardians Highlights</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/wJSjztIzJlc?si=-ih64t2ZG-1Y2uxS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    </div>
 
     <!-- Animation Section -->
     <div class="animation-container">
-        <h2>Trigger Animation</h2>
-        <!-- Button to trigger the animation -->
-        <button id="animate-btn">Click to Animate</button>
-        <!-- Div that will be animated -->
-        <div class="animated-box">
-            <h3>This box will fade in when clicked!</h3>
-        </div>
-    </div>
-    <!--Logo-->
-    <div>
-        <h2>Illustrator Logo</h2>
-        <img src="dp logo.svg" alt="Dr. Pepper Logo">
+      <h2>David Fry Walk Off Home Run</h2>
+      <img src="DavidFry.gif" alt="David Fry winning the game against the Yankees">
     </div>
 
-    <script src="script.js"></script>
+    <!-- Logo Section -->
+    <div class="logo-container">
+      <h2>Illustrator Logo</h2>
+      <img src="dp logo.svg" alt="Dr. Pepper Logo" />
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
